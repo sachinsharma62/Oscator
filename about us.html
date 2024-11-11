@@ -1,0 +1,259 @@
+<!Doctype html>
+<html lang="en-us">
+	<head>
+		<title>Ostacore</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+		<style>
+			.head{
+				background-color:#070909e0;
+			}
+			.nav_pad{
+				padding:10px 0;
+			}
+			.menu li{
+				text-transform:uppercase;
+				letter-spacing:2px;
+				margin: 0 5px;
+			}
+		</style>
+				<style>
+			body {font-family: Arial, Helvetica, sans-serif;}
+
+			#myImg {
+			  border-radius: 5px;
+			  cursor: pointer;
+			  transition: 0.3s;
+			}
+			/* The Modal (background) */
+			.modal {
+			  display: none; /* Hidden by default */
+			  position: fixed; /* Stay in place */
+			  z-index: 1; /* Sit on top */
+			  padding-top: 100px; /* Location of the box */
+			  left: 0;
+			  top: 0;
+			  width: 100%; /* Full width */
+			  height: 100%; /* Full height */
+			  background-color: rgb(0,0,0); /* Fallback color */
+			  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+			}
+
+			/* Modal Content (image) */
+			.modal-content {
+			  margin: auto;
+			  display: block;
+			  width: 80%;
+			  max-width: 500px;
+			}
+
+			/* Caption of Modal Image */
+			#caption {
+			  margin: auto;
+			  display: block;
+			  width: 80%;
+			  max-width: 700px;
+			  text-align: center;
+			  color: #ccc;
+			  padding: 10px 0;
+			  height: 150px;
+			}
+
+			/* Add Animation */
+			.modal-content, #caption {  
+			  -webkit-animation-name: zoom;
+			  -webkit-animation-duration: 0.6s;
+			  animation-name: zoom;
+			  animation-duration: 0.6s;
+			}
+
+			@-webkit-keyframes zoom {
+			  from {-webkit-transform:scale(0)} 
+			  to {-webkit-transform:scale(1)}
+			}
+
+			@keyframes zoom {
+			  from {transform:scale(0)} 
+			  to {transform:scale(1)}
+			}
+
+			/* The Close Button */
+			.close {
+			  position: absolute;
+			  top: 15px;
+			  right: 35px;
+			  color: #f1f1f1;
+			  font-size: 40px;
+			  font-weight: bold;
+			  transition: 0.3s;
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: #bbb;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+
+			/* 100% Image Width on Smaller Screens */
+			@media only screen and (max-width: 700px){
+			  .modal-content {
+			    width: 100%;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+
+<!-- section head -->
+		<section class="back_img">
+			<div class="grad">
+				<div class="head">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 nav_pad">
+								<nav class="navbar">
+									<div class="navbar-header col-md-4">
+										<div class="navbar-brand">
+											<div class="nav_logo">
+											<img src="img/logo.png" class="img-responsive">
+											</div>
+										</div>
+										<button data-toggle="collapse" class="navbar-toggle" data-target="#main_menu"style="border-color: #f0f0f0;background: transparent;">
+											<span class="icon-bar"style="background-color:#fff;"></span>
+											<span class="icon-bar"style="background-color:#fff;"></span>
+											<span class="icon-bar"style="background-color:#fff;"></span>
+										</button>
+									</div>
+									<div id="main_menu" class="collapse navbar-collapse pull-right col-md-8">
+										<ul class="navbar-nav nav white menu">
+											<li class="active white_back">
+												<a href="ostacore.html"class="white">Home</a>
+											</li>
+											<li>
+												<a href="service.html"class="white">Services</a>
+											</li>
+											<li>
+												<a href="portfolio.html"class="white">Portfolio</a>
+											</li>
+											<li class="dropdown">
+												<a href="read-blog.html"class="white">Blog</a>
+											</li>
+											<li>
+												<a href="support.html"class="white">Support</a>
+											</li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="common_pad">
+						<div class="common_pad">
+							<div class="col-sm-12 white">
+								<h1 style="letter-spacing:4px;font-size:5rem;font-weight: 900">ABOUT US</h1>
+								
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!-- section head -->
+		<section class="mid_section common_pad">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="margin-top: 4em">	 
+							<div class="col-md-6" >
+								<img id="myImg1" src="img/service-img2.png" alt="Snow"class="img-responsive">
+
+								<!-- The Modal -->
+								<div id="myModal" class="modal">
+								  <span class="close">&times;</span>
+								  <img class="modal-content" id="img01">
+								  <div id="caption"></div>
+								</div>
+
+									<script>
+										// Get the modal
+										var modal = document.getElementById('myModal');
+
+										// Get the image and insert it inside the modal - use its "alt" text as a caption
+										var img = document.getElementById('myImg1');
+										var modalImg = document.getElementById("img01");
+										var captionText = document.getElementById("caption");
+										img.onclick = function(){
+										  modal.style.display = "block";
+										  modalImg.src = this.src;
+										  captionText.innerHTML = this.alt;
+										}
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close")[0];
+
+										// When the user clicks on <span> (x), close the modal
+										span.onclick = function() { 
+										  modal.style.display = "none";
+										}
+									</script>
+							</div>
+							<div class="col-md-6">
+								<h5 style="line-height: 1.8;letter-spacing: 1.1px;font-size: 1.6rem;">Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Lorem Ipsum i s type and scrambled it to make a type specimen book. It has survived not only five Lorem Ipsum is simply dummy text of the printing and specimen book. </h5>
+								<h5 style="line-height: 1.8;letter-spacing: 1.1px;font-size: 1.6rem;">t has survived not only fiveLorem Ipsum is simply dummy text of the printing and typetook a Lorem Ipsum is text of the printing and typetook a galley of type and scrambled it to make a type specimen book. <a href="#"class="link_ex">this is link example</a> It has survived not only five Lorem Ipsum is type and scrambled it to make a type specimen book. It has survived not only five Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum  </h5>
+								<h5 style="line-height: 1.8;letter-spacing: 1.1px;font-size: 1.6rem;">t has survived not only fiveLorem Ipsum is simply dummy text of the printing </h5>
+							</div>
+					</div>
+					<div class="col-md-12 common_pad">
+						<div class="col-md-12 ">
+							<h5 style="line-height: 1.8;letter-spacing: 1.1px;font-size: 1.6rem;">
+								Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Lorem Ipsum i s type and scrambled it to make a type specimen book. It has survived not only five Lorem Ipsum is simply dummy text of the printing and specimen book. 
+							</h5>
+							<h5 style="line-height: 1.8;letter-spacing: 1.1px;font-size: 1.6rem;">
+								 has survived not only fiveLorem Ipsum is simply dummy text of the printing and typetook a Lorem Ipsum is text of the printing and typetook a galley of type and scrambled it to make a type specimen book. this is link example It has survived not only five Lorem Ipsum is type and scrambled it to make a type specimen book. It has survived not only five Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum 
+							</h5>
+							<h5 style="line-height: 1.8;letter-spacing: 1.1px;font-size: 1.6rem;">
+							 	has survived not only fiveLorem Ipsum is simply dummy text of the printing 
+							</h5>
+						</div>
+						<div class="common_pad col-md-12"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="foot_section back_foot_img text-center">
+				<article class="common_pad foot_back">
+					<div class="container">
+						<div class="row">
+							<h4>
+								<ul class="foot_ul">
+									<li>HOME</li>
+									<li>our services </li>
+									<li>portfolio</li>
+									<li>read blog </li>
+									<li>contact</li>
+									<li>support</li>
+								</ul>
+							</h4>
+							<h4>
+								&copy; 2019, all rights reserved.<font color="#d5d503"> ostacor.</font> designed by<font color="#0ff"> Sachin Sharma</font>
+							</h4>
+							<img src="img/logo.png"style="padding-top:40px; ">
+						</div>
+					</div>
+				</article>
+		</section>
+		<div class="clearfix"></div>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	</body>
+</html>
