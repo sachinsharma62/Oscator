@@ -1,0 +1,340 @@
+*{
+	line-height:1.8;
+}
+body {   
+	color: #cacaca;
+	 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	 overflow-x: hidden;
+	}
+button:focus{
+	outline: 0;
+}
+.marg_none{
+	margin: 0;
+}
+.clearfix{
+	clear:both;
+	height:1px;
+}
+.left{
+	float: left;
+}
+.back_img{
+	background-image: url('../img/back1.png');
+	background-size: cover;
+}
+/*padding*/
+
+.pad{
+	padding: 35px 0;
+}
+.border_none{
+	border: 0px;
+}
+/* text color */
+
+.white{
+	color: #fff;
+}
+.black{
+	color: #000;
+}
+.dark_blue{
+	color: #2e3192;
+}
+.link_ex{
+	color: #fc4733;
+	text-decoration: underline;
+}
+
+/*color */
+/*background color*/
+
+.background_white{
+	background-color: #fff;
+	
+}
+
+/*background color*/
+.marg_top{
+	margin-top: 20px;
+}
+.marg_top_none{
+	margin-top: 0px;
+}
+
+.grad{
+background: #ff00fc;
+background: -moz-linear-gradient(left,#ff00fcb3 1%,#0018ffbd 100%); 
+background: -webkit-linear-gradient(left, #ff00fcb3 1%,#0018ffbd 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ff00fcb3 1%,#0018ffbd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff00fc', endColorstr='#0018ff',GradientType=1 ); /* IE6-9 */
+opacity: 80%;
+}
+/*background color*/
+
+.common_pad{
+	padding: 50px 0;
+
+}
+.flex{
+	display: flex;
+}
+.btn_get{
+	padding: 10px 20px;
+	font-size: 1.8rem;
+	background-color: #ffffff9c;
+
+}
+.port_btn{
+	padding: 10px 20px;
+	margin-left: 5px;
+	font-size: 1.8rem; 
+	background-color:#00ffff9c;
+}
+.img1{
+background-image: url('../img/img1.png');
+background-size: cover;
+padding: 30px 15px;
+}
+.img2{
+background-image: url('../img/img2.png');
+background-size: cover;
+padding: 30px 15px;
+}
+.img3{
+background-image: url('../img/img3.png');
+background-size: cover;
+padding: 30px 15px;
+}
+.imgthree_pad,.three{
+	
+}
+.three_text{
+	color: #00ffff;
+	font-size: 2.8rem;
+}
+.font_regular{
+	font-weight: 400;
+}
+
+/*mid_section1*/
+
+.big_btn{
+	background-color: #2e3192;
+	border:0;
+	font-size: 2rem
+}
+
+/*mid_section1 end*/
+
+
+/*mid_section3*/
+.back2_black{
+	background-image: url(../img/back2.png);
+	background-size: cover;
+}
+.grad_back2{
+	background: #010d46; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #010d46d6 0%,#250425e0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #010d46d6 0%,#250425e0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #010d46d6 0%,#250425e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010d46', endColorstr='#250425',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+/*mid_section3 end*/
+
+/*mid_section4 */
+
+.view {
+
+   margin: 10px;
+   border: 5px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   cursor: default;
+}
+.view .mask, .view .content {
+
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.img_hover {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    margin: 0 0 0 -32px;
+    padding: 0.2rem;
+}
+.view img {
+   display: block;
+   position: relative;
+   width: 100%;
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-9999px;
+   width:20px;
+   height:20px;
+}
+.fourth-effect .mask {
+	position:absolute; /* Center the mask */
+	top:66px;
+	left:100px;
+	cursor:pointer;
+    border-radius: 50px;
+    border-width: 50px;
+    display: inline-block;
+    height: relative;
+    width: relative;
+	
+	border:0px solid rgba(0,0,0,0.7);
+	-moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+	opacity:1;
+	visibility:visible;
+	-moz-transform:scale(4);
+	-webkit-transform:scale(4);
+	-o-transform:scale(4);
+	-ms-transform:scale(4);
+	transform:scale(4);
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.fourth-effect:hover .mask {
+   opacity: 1;
+	border: 40px solid rgba(0, 0, 0, 0.7);
+   visibility:visible;
+}
+/*mid_section4 end*/
+/*mid_section5*/
+input:focus{
+	outline: 0px !important;
+	border-color: none;
+	box-shadow: none;
+}
+/*mid_section5 end*/
+/*foot_section*/
+.back_foot_img{
+	background-image: url(../img/back3.png);
+	background-size: cover;
+
+}
+.foot_back{
+	background-color: #000000cf;
+}
+.foot_ul li{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 0 20px;
+	border-right: 1px solid #fff
+}
+.foot_ul li:last-child{
+	border: 0;
+}
+.foot_ul{
+	display: inline-block;
+}
+/*foot_section end*/
+
+/*img click big*/
+			#myImg {
+			  border-radius: 5px;
+			  cursor: pointer;
+			  transition: 0.3s;
+			}
+			/* The Modal (background) */
+			.modal {
+			  display: none; /* Hidden by default */
+			  position: fixed; /* Stay in place */
+			  z-index: 1; /* Sit on top */
+			  padding-top: 100px; /* Location of the box */
+			  left: 0;
+			  top: 0;
+			  width: 100%; /* Full width */
+			  height: 100%; /* Full height */
+			  background-color: rgb(0,0,0); /* Fallback color */
+			  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+			}
+
+			/* Modal Content (image) */
+			.modal-content {
+			  margin: auto;
+			  display: block;
+			  width: 80%;
+			  max-width: 500px;
+			}
+
+			/* Caption of Modal Image */
+			#caption {
+			  margin: auto;
+			  display: block;
+			  width: 80%;
+			  max-width: 700px;
+			  text-align: center;
+			  color: #ccc;
+			  padding: 10px 0;
+			  height: 150px;
+			}
+
+			/* Add Animation */
+			.modal-content, #caption {  
+			  -webkit-animation-name: zoom;
+			  -webkit-animation-duration: 0.6s;
+			  animation-name: zoom;
+			  animation-duration: 0.6s;
+			}
+
+			@-webkit-keyframes zoom {
+			  from {-webkit-transform:scale(0)} 
+			  to {-webkit-transform:scale(1)}
+			}
+
+			@keyframes zoom {
+			  from {transform:scale(0)} 
+			  to {transform:scale(1)}
+			}
+
+			/* The Close Button */
+			.close {
+			  position: absolute;
+			  top: 15px;
+			  right: 35px;
+			  color: #f1f1f1;
+			  font-size: 40px;
+			  font-weight: bold;
+			  transition: 0.3s;
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: #bbb;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+
+			/* 100% Image Width on Smaller Screens */
+			@media only screen and (max-width: 700px){
+			  .modal-content {
+			    width: 100%;
+			  }
+			}
+	/*img click big end*/
+
+
+	/*read blog */
+
+	.btn_links{
+		padding: 2px 13px;
+		border-radius: 3px;
+		border: 0;
+	}
+
+	/*read blog end*/
